@@ -24,7 +24,7 @@ class CommunitiesController < ApplicationController
                         :marketplace_language)
         .merge(plan_level: PlanUtils::SCALE,
                expires_at: nil,
-               payment_process: :none)
+               payment_process: :preauthorize)
       )
 
       user = UserService::API::Users.create_user_with_membership({
