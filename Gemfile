@@ -51,6 +51,7 @@ gem 'possibly', '~> 0.2.0'
 gem 'recaptcha'
 gem 'delayed_job', "~>3.0.5"
 gem 'delayed_job_active_record'
+gem 'daemons'
 gem 'json', "~>1.8.0"
 gem 'multi_json', "~>1.7.3" # 1.8.0 caused "invalid byte sequence in UTF-8" at heroku
 gem 'web_translate_it'

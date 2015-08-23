@@ -1,0 +1,45 @@
+I, [2015-08-18T07:06:30.767500 #21217]  INFO -- : Refreshing Gem list
+/var/www/sharetribe/config/routes.rb:48: warning: already initialized constant REMOVED_LOCALES
+/var/www/sharetribe/config/routes.rb:48: warning: previous definition of REMOVED_LOCALES was here
+I, [2015-08-18T07:06:42.096473 #21217]  INFO -- : listening on addr=/var/www/sharetribe/shared/sockets/unicorn.sock fd=12
+I, [2015-08-18T07:06:43.119630 #21237]  INFO -- : worker=0 ready
+I, [2015-08-18T07:06:44.113456 #21217]  INFO -- : master process ready
+I, [2015-08-18T07:06:44.132828 #21242]  INFO -- : worker=1 ready
+I, [2015-08-18T16:33:03.858844 #1246]  INFO -- : Refreshing Gem list
+/var/www/sharetribe/config/routes.rb:48: warning: already initialized constant REMOVED_LOCALES
+/var/www/sharetribe/config/routes.rb:48: warning: previous definition of REMOVED_LOCALES was here
+I, [2015-08-18T16:33:21.321134 #1246]  INFO -- : unlinking existing socket=/var/www/sharetribe/shared/sockets/unicorn.sock
+I, [2015-08-18T16:33:21.321324 #1246]  INFO -- : listening on addr=/var/www/sharetribe/shared/sockets/unicorn.sock fd=12
+I, [2015-08-18T16:33:22.335703 #1267]  INFO -- : worker=0 ready
+I, [2015-08-18T16:33:23.333119 #1246]  INFO -- : master process ready
+I, [2015-08-18T16:33:23.351692 #1272]  INFO -- : worker=1 ready
+E, [2015-08-19T18:27:42.141996 #1267] ERROR -- : app error: deadlock; recursive locking (ThreadError)
+E, [2015-08-19T18:27:42.142100 #1267] ERROR -- : /usr/local/rvm/gems/ruby-2.1.2/gems/rack-1.4.5/lib/rack/lock.rb:14:in `lock'
+E, [2015-08-19T18:27:42.142142 #1267] ERROR -- : /usr/local/rvm/gems/ruby-2.1.2/gems/rack-1.4.5/lib/rack/lock.rb:14:in `call'
+E, [2015-08-19T18:27:42.142173 #1267] ERROR -- : /usr/local/rvm/gems/ruby-2.1.2/gems/newrelic_rpm-3.9.1.236/lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+E, [2015-08-19T18:27:42.142203 #1267] ERROR -- : /usr/local/rvm/gems/ruby-2.1.2/gems/rack-cache-1.2/lib/rack/cache/context.rb:136:in `forward'
+E, [2015-08-19T18:27:42.142230 #1267] ERROR -- : /usr/local/rvm/gems/ruby-2.1.2/gems/rack-cache-1.2/lib/rack/cache/context.rb:245:in `fetch'
+E, [2015-08-19T18:27:42.142257 #1267] ERROR -- : /usr/local/rvm/gems/ruby-2.1.2/gems/rack-cache-1.2/lib/rack/cache/context.rb:185:in `lookup'
+E, [2015-08-19T18:27:42.142285 #1267] ERROR -- : /usr/local/rvm/gems/ruby-2.1.2/gems/rack-cache-1.2/lib/rack/cache/context.rb:66:in `call!'
+E, [2015-08-19T18:27:42.142312 #1267] ERROR -- : /usr/local/rvm/gems/ruby-2.1.2/gems/rack-cache-1.2/lib/rack/cache/context.rb:51:in `call'
+E, [2015-08-19T18:27:42.142339 #1267] ERROR -- : /usr/local/rvm/gems/ruby-2.1.2/gems/newrelic_rpm-3.9.1.236/lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+E, [2015-08-19T18:27:42.142366 #1267] ERROR -- : /usr/local/rvm/gems/ruby-2.1.2/gems/rack-timeout-0.1.1/lib/rack/timeout.rb:104:in `call'
+E, [2015-08-19T18:27:42.142392 #1267] ERROR -- : /usr/local/rvm/gems/ruby-2.1.2/gems/newrelic_rpm-3.9.1.236/lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+E, [2015-08-19T18:27:42.142419 #1267] ERROR -- : /usr/local/rvm/gems/ruby-2.1.2/gems/airbrake-4.1.0/lib/airbrake/user_informer.rb:16:in `_call'
+E, [2015-08-19T18:27:42.142445 #1267] ERROR -- : /usr/local/rvm/gems/ruby-2.1.2/gems/airbrake-4.1.0/lib/airbrake/user_informer.rb:12:in `call'
+E, [2015-08-19T18:27:42.142471 #1267] ERROR -- : /usr/local/rvm/gems/ruby-2.1.2/gems/newrelic_rpm-3.9.1.236/lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+E, [2015-08-19T18:27:42.142498 #1267] ERROR -- : /usr/local/rvm/gems/ruby-2.1.2/gems/railties-3.2.21/lib/rails/engine.rb:484:in `call'
+E, [2015-08-19T18:27:42.142524 #1267] ERROR -- : /usr/local/rvm/gems/ruby-2.1.2/gems/railties-3.2.21/lib/rails/application.rb:231:in `call'
+E, [2015-08-19T18:27:42.142550 #1267] ERROR -- : /usr/local/rvm/gems/ruby-2.1.2/gems/railties-3.2.21/lib/rails/railtie/configurable.rb:30:in `method_missing'
+E, [2015-08-19T18:27:42.142576 #1267] ERROR -- : /usr/local/rvm/gems/ruby-2.1.2/gems/newrelic_rpm-3.9.1.236/lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+E, [2015-08-19T18:27:42.142635 #1267] ERROR -- : /usr/local/rvm/gems/ruby-2.1.2/gems/rack-1.4.5/lib/rack/deflater.rb:13:in `call'
+E, [2015-08-19T18:27:42.142669 #1267] ERROR -- : /usr/local/rvm/gems/ruby-2.1.2/gems/newrelic_rpm-3.9.1.236/lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+E, [2015-08-19T18:27:42.142698 #1267] ERROR -- : /usr/local/rvm/gems/ruby-2.1.2/gems/unicorn-4.6.3/lib/unicorn/http_server.rb:552:in `process_client'
+E, [2015-08-19T18:27:42.142723 #1267] ERROR -- : /usr/local/rvm/gems/ruby-2.1.2/gems/unicorn-4.6.3/lib/unicorn/http_server.rb:632:in `worker_loop'
+E, [2015-08-19T18:27:42.142747 #1267] ERROR -- : /usr/local/rvm/gems/ruby-2.1.2/gems/unicorn-4.6.3/lib/unicorn/http_server.rb:500:in `spawn_missing_workers'
+E, [2015-08-19T18:27:42.142772 #1267] ERROR -- : /usr/local/rvm/gems/ruby-2.1.2/gems/unicorn-4.6.3/lib/unicorn/http_server.rb:142:in `start'
+E, [2015-08-19T18:27:42.142797 #1267] ERROR -- : /usr/local/rvm/gems/ruby-2.1.2/gems/unicorn-4.6.3/bin/unicorn:126:in `<top (required)>'
+E, [2015-08-19T18:27:42.142821 #1267] ERROR -- : /usr/local/rvm/gems/ruby-2.1.2/bin/unicorn:23:in `load'
+E, [2015-08-19T18:27:42.142845 #1267] ERROR -- : /usr/local/rvm/gems/ruby-2.1.2/bin/unicorn:23:in `<main>'
+E, [2015-08-19T18:27:42.142870 #1267] ERROR -- : /usr/local/rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `eval'
+E, [2015-08-19T18:27:42.142894 #1267] ERROR -- : /usr/local/rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `<main>'

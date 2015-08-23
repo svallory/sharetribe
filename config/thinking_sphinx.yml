@@ -1,6 +1,10 @@
 # The charset_table is really long because we want to allow folding of accented characters¨é ->e, ä->a etc. AND the use of cyrillic letters.
 
 production:
+  pid_file: tmp/pids/searchd.pid
+  indices_location: db/sphinx
+  configuration_file: config/production.sphinx.conf
+  binlog_path: tmp/binlog
   version: '2.1.8'
   mysql41: 3564
   address: <%= ENV['SPHINX_HOST'] || '' %>

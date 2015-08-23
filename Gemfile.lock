@@ -138,6 +138,7 @@ GEM
       nokogiri (>= 1.5.0)
       rails (>= 3.0.0)
     currencies (0.4.2)
+    daemons (1.2.3)
     dalli (2.6.4)
     database_cleaner (0.9.1)
     debug_inspector (0.0.2)
@@ -523,6 +524,7 @@ DEPENDENCIES
   coveralls
   cucumber
   cucumber-rails
+  daemons
   dalli
   database_cleaner
   delayed_job (~> 3.0.5)
@@ -597,3 +599,6 @@ DEPENDENCIES
   will_paginate
   xpath
   zeus (= 0.15.1)
+
+BUNDLED WITH
+   1.10.6

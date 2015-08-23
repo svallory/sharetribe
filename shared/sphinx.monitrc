@@ -1,0 +1,14 @@
+# an example Monit configuration file for delayed_job
+# See: http://stackoverflow.com/questions/1226302/how-to-monitor-delayedjob-with-monit/1285611
+#
+# To use:
+# 1. copy to /var/www/sharetribe/shared/delayed_job.monitrc
+# 2. replace {app_name} as appropriate
+# 3. add this to your /etc/monit/monitrc
+#
+#   include /var/www/sharetribe/shared/delayed_job.monitrc
+
+check process sphinx
+  with pidfile /var/www/sharetribe/tmp/pids/searchd.pid
+  start program = "/bin/bash -c 'cd /var/www/sharetribe;source $(/usr/local/rvm/bin/rvm env --path);bundle exec rake RAILS_ENV=production ts:start'"
+  stop program = "/bin/bash -c 'cd /var/www/sharetribe;source $(/usr/local/rvm/bin/rvm env --path);bundle exec rake RAILS_ENV=production ts:stop'"
